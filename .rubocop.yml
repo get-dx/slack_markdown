@@ -1,0 +1,16 @@
+inherit_from: .rubocop_todo.yml
+
+AllCops:
+  NewCops: enable
+
+Style/Documentation:
+  Enabled: false
+
+Layout/LineLength:
+  Max: 140
+  Exclude:
+    - spec/**/*
+
+Metrics/BlockLength:
+  Exclude:
+    - spec/**/*

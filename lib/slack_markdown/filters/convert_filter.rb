@@ -29,7 +29,7 @@ module SlackMarkdown
             else
               ['channel', data, data]
             end
-          when /\A@((?:U|B).+)/ # user or bot
+          when /\A@((?:U|W|B).+)/ # user or bot
             user = context.include?(:on_slack_user_id) ? context[:on_slack_user_id].call(Regexp.last_match(1)) : nil
             if user
               override_text = nil

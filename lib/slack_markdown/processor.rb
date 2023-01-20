@@ -11,6 +11,7 @@ require 'slack_markdown/filters/bold_filter'
 require 'slack_markdown/filters/italic_filter'
 require 'slack_markdown/filters/strike_filter'
 require 'slack_markdown/filters/line_break_filter'
+require 'slack_markdown/filters/list_filter'
 
 module SlackMarkdown
   class Processor
@@ -30,7 +31,8 @@ module SlackMarkdown
         SlackMarkdown::Filters::BoldFilter,
         SlackMarkdown::Filters::ItalicFilter,
         SlackMarkdown::Filters::StrikeFilter,
-        SlackMarkdown::Filters::LineBreakFilter
+        SlackMarkdown::Filters::LineBreakFilter,
+        SlackMarkdown::Filters::ListFilter
       ]
     end
 
